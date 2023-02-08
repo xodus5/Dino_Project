@@ -20,6 +20,7 @@ public class SBackground : MonoBehaviour
 
         leftPosX = -(xScreenHalfSize * 2);
         rightPosX = xScreenHalfSize * 2 * backgrounds.Length;
+        transform.position = new Vector3(Random.Range(leftPosX, rightPosX), Random.Range(leftPosX, rightPosX));
     }
 
     // Update is called once per frame
